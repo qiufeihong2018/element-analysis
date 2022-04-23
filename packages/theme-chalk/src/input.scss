@@ -1,0 +1,21 @@
+@import "mixins/mixins";
+@import "common/var";
+
+@include b(textarea) {
+ ……此处省略多行文本输入框的样式
+}
+
+@include b(input) {
+  ……此处省略input的样式
+}
+
+@include b(input-group) {
+  ……此处省略输入框组的样式
+}
+
+/** disalbe default clear on IE */
+.el-input__inner::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
